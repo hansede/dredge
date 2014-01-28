@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  high: 9.99
+  medium: 9.99
+  low: 9.99
+
+two:
+  high: 9.99
+  medium: 9.99
+  low: 9.99
