@@ -1,5 +1,7 @@
 rake db:create db:migrate
+
 rails s
+
 http://localhost:3000/parse
 
 Right now it just fills up a database.
