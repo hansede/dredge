@@ -1,5 +1,5 @@
 class Card < ActiveRecord::Base
-  attr_accessible :cmc, :color, :name, :rarity, :type
+  attr_accessible :cmc, :color, :name, :rarity, :card_type
   belongs_to :release
-  has_one :price
+  has_many :prices
 end
