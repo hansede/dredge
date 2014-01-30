@@ -1,0 +1,20 @@
+.container
+  .panel.panel-default{:style => 'margin-top: 50px;'}
+    .panel-heading
+      .row
+        .col-xs-4
+        .col-xs-4{:style => 'text-align: center;'}
+          .panel-title{:style => 'font-size: 24px;'}
+            Theros
+        .col-xs-4
+          %input.form-control.pull-right{:type => 'text', 'ng-model' => 'searchText', :style => 'width: 200px;'}
+    .panel-body
+      .row{'ng-repeat' => 'card in prices | filter:searchText | orderBy:"price.medium":true'}
+        .col-xs-3
+          {{card.name}}
+        .col-xs-3
+          {{card.price.high | currency}}
+        .col-xs-3
+          {{card.price.medium | currency}}
+        .col-xs-3
+          {{card.price.low | currency}}

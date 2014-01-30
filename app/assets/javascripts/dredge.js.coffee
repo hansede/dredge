@@ -1,0 +1,1 @@
+window.dredge = angular.module 'dredge', []
